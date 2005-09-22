@@ -6,6 +6,7 @@
 %define		pdir	XML
 %define		pnam	SAX-ExpatXS
 Summary:	XML::SAX::ExpatXS - Perl SAX 2 XS extension to Expat parser
+Summary(pl):	XML::SAX::ExpatXS - rozszerzenie XS Perla SAX 2 do analizatora Expat
 Name:		perl-XML-SAX-ExpatXS
 Version:	1.08
 Release:	0.1
@@ -25,6 +26,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 XML::SAX::ExpatXS is a direct XS extension to Expat XML parser. It
 implements Perl SAX 2.1 interface.
+
+%description -l pl
+XML::SAX::ExpatXS to bezpo¶rednie rozszerzenie XS do analizatora XML-a
+Expat. Implementuje interfejs Perla SAX 2.1.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
