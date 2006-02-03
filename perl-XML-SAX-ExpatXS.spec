@@ -8,13 +8,13 @@
 Summary:	XML::SAX::ExpatXS - Perl SAX 2 XS extension to Expat parser
 Summary(pl):	XML::SAX::ExpatXS - rozszerzenie XS Perla SAX 2 do analizatora Expat
 Name:		perl-XML-SAX-ExpatXS
-Version:	1.08
-Release:	0.1
+Version:	1.10
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1304d9ed3ca598ea000ea559dd387e88
+# Source0-md5:	27c8e28fc2faf9e0a651a15189456b5b
 BuildRequires:	expat-devel
 %if %{with tests}
 BuildRequires:	perl-XML-SAX >= 0.12
@@ -35,7 +35,7 @@ Expat. Implementuje interfejs Perla SAX 2.1.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 # we want to add_parser in post, not on make install
-head -n 11 Makefile.PL > Makefile.PL.tmp
+head -n 98 Makefile.PL > Makefile.PL.tmp
 mv -f Makefile.PL.tmp Makefile.PL
 
 %build
@@ -68,5 +68,8 @@ fi
 %defattr(644,root,root,755)
 %doc Changes
 %{perl_vendorarch}/XML/SAX/*
-%{perl_vendorarch}/auto/XML/SAX/*
+%dir %{perl_vendorarch}/auto/XML/SAX/ExpatXS
+%dir %{perl_vendorarch}/auto/XML/SAX/ExpatXS
+%{perl_vendorarch}/auto/XML/SAX/ExpatXS/*.so
+%{perl_vendorarch}/auto/XML/SAX/ExpatXS/*.bs
 %{_mandir}/man3/*
