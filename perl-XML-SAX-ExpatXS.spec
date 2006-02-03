@@ -69,7 +69,6 @@ fi
 %doc Changes
 %{perl_vendorarch}/XML/SAX/*
 %dir %{perl_vendorarch}/auto/XML/SAX/ExpatXS
-%dir %{perl_vendorarch}/auto/XML/SAX/ExpatXS
-%{perl_vendorarch}/auto/XML/SAX/ExpatXS/*.so
+%attr(755,root,root) %{perl_vendorarch}/auto/XML/SAX/ExpatXS/*.so
 %{perl_vendorarch}/auto/XML/SAX/ExpatXS/*.bs
 %{_mandir}/man3/*
