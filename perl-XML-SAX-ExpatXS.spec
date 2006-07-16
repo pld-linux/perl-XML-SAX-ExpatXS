@@ -8,13 +8,13 @@
 Summary:	XML::SAX::ExpatXS - Perl SAX 2 XS extension to Expat parser
 Summary(pl):	XML::SAX::ExpatXS - rozszerzenie XS Perla SAX 2 do analizatora Expat
 Name:		perl-XML-SAX-ExpatXS
-Version:	1.10
-Release:	1
+Version:	1.20
+Release:	0.1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	27c8e28fc2faf9e0a651a15189456b5b
+# Source0-md5:	fb6592f799316c588202f54a845ebbff
 BuildRequires:	expat-devel
 %if %{with tests}
 BuildRequires:	perl-XML-SAX >= 0.12
