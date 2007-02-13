@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	SAX-ExpatXS
 Summary:	XML::SAX::ExpatXS - Perl SAX 2 XS extension to Expat parser
-Summary(pl.UTF-8):   XML::SAX::ExpatXS - rozszerzenie XS Perla SAX 2 do analizatora Expat
+Summary(pl.UTF-8):	XML::SAX::ExpatXS - rozszerzenie XS Perla SAX 2 do analizatora Expat
 Name:		perl-XML-SAX-ExpatXS
 Version:	1.20
 Release:	1
