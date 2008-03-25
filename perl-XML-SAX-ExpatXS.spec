@@ -13,8 +13,9 @@ Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fb6592f799316c588202f54a845ebbff
+URL:		http://search.cpan.org/dist/XML-SAX-ExpatXS/
 BuildRequires:	expat-devel
 %if %{with tests}
 BuildRequires:	perl-XML-SAX >= 0.12
