@@ -1,0 +1,27 @@
+--- XML-SAX-ExpatXS-1.31/Makefile.PL.orig	2009-10-08 14:09:16.000000000 +0200
++++ XML-SAX-ExpatXS-1.31/Makefile.PL	2009-10-08 14:09:49.000000000 +0200
+@@ -100,24 +100,6 @@
+ );
+ 
+ 
+-sub MY::install {
+-    package MY;
+-    my $script = shift->SUPER::install(@_);
+-    if (ExtUtils::MakeMaker::prompt("Do you want to alter ParserDetails.ini?", "Y") =~ /^y/i) {
+-        $script =~ s/install :: (.*)$/install :: $1 install_expat_xs/m;
+-        $script .= <<"INSTALL";
+-
+-install_expat_xs :
+-\t\@\$(PERL) -MXML::SAX -e "XML::SAX->add_parser(q(XML::SAX::ExpatXS))->save_parsers()"
+-
+-INSTALL
+-
+-    }
+-
+-    return $script;
+-}
+-
+-
+ sub build_xml_sax_expatxs_preload {
+     
+     print "Writing XML::SAX::ExpatXS::Preload\n";
