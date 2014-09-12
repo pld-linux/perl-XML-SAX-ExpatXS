@@ -74,5 +74,4 @@ fi
 %dir %{perl_vendorarch}/auto/XML/SAX
 %dir %{perl_vendorarch}/auto/XML/SAX/ExpatXS
 %attr(755,root,root) %{perl_vendorarch}/auto/XML/SAX/ExpatXS/*.so
-%{perl_vendorarch}/auto/XML/SAX/ExpatXS/*.bs
 %{_mandir}/man3/*
