@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
 %define		pnam	SAX-ExpatXS
 Summary:	XML::SAX::ExpatXS - Perl SAX 2 XS extension to Expat parser
